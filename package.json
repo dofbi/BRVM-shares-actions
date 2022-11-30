@@ -1,0 +1,38 @@
+{
+  "name": "brvm-shares-actions",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A GitHub Action that scrap trading day shares from brvm.org",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx ncc build ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dofbi/BRVM-shares-actions.git"
+  },
+  "keywords": [
+    "BRVM",
+    "action",
+    "github",
+    "scraping",
+    "data"
+  ],
+  "author": "Mamadou Diagne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dofbi/BRVM-shares-actions/issues"
+  },
+  "homepage": "https://github.com/dofbi/BRVM-shares-actions#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "actions-toolkit": "^6.0.1",
+    "json2csv": "^5.0.7",
+    "moment": "^2.29.4",
+    "scrape-it": "^5.3.2"
+  }
+}
